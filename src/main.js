@@ -8,6 +8,10 @@ app.use(cors());
 app.use(express.json());
 app.use("/posts", postsRouter);
 
+app.use("/", (req, res) => {
+  return res.json("hello to ziad server");
+});
+
 app.use("*", (req, res) => {
   return res.json("404 not found");
 });
