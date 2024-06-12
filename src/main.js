@@ -9,7 +9,7 @@ app.use(express.json());
 app.use("/posts", postsRouter);
 
 app.use("/", (req, res) => {
-  return res.json("hello to ziad server");
+  return res.json("welcome to ziad server");
 });
 
 app.use("*", (req, res) => {
