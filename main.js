@@ -1,5 +1,5 @@
 import express from "express";
-import postsRouter from "./modules/posts.routes.js";
+import postsRouter from "./src/modules/posts.routes.js";
 import cors from "cors";
 const app = express();
 const port = process.env.port || 3000;
